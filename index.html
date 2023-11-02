@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3 Project</title>
+    
+    <!--with this link you are able to use bootstrap style the html easily-->    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--this is the stlye used for html-->    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--class used to pad a header or image in a margin like setting-->    
+    <div class="container-fluid">
+        <div class="row"></div>
+    </div>
+    <!--this is the class for the bar at the top of the page. using the class i was able to put a search bar as well-->    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+    <!--the location of where the logo will take you once clicked.-->
+            <a class="navbar-brand" href="index.html">Go2Graphics</a>
+
+    <!--the toggle gave it the ability to collapse and have a function.-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+
+    <!-- the nav link was able to give words a direction to different pages in the html and the aria is for the control of different attributes.-->
+                <a class="nav-link active" aria-current="page" href="services_pricing.html">Services & Pricing</a>
+
+    <!--used a list attribute to seperate page links-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--Used the external css to make the border flow and look asthetically pleasing via carousel-->
+    <!--span class is a generic incline container and they help to buttons function-->  
+    
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/80311340_3082109145151954_2365601242845020160_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=UYW0wE2cUVcAX-WSHWX&_nc_ht=scontent-lga3-1.xx&oh=00_AfA23mDPXnIAhdio_U-uMbkk4BkKNOq1NxBfkHBxJa0Lkg&oe=656939DB" class="d-block w-100" alt="thank you collage with sample designs">
+          </div>
+          <div class="carousel-item">
+            <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/345457006_549501783985310_5517839394598075525_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=gTluTOWIFXkAX_-TmUa&_nc_ht=scontent-lga3-2.xx&oh=00_AfDYdBxrOloxhEMWKMJc-Kf222rB6zjoPIWO73qTxjE9Xw&oe=6545EFE7" class="d-block w-100" alt="promotion designs with starting price">
+          </div>
+          <div class="carousel-item">
+            <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/245712903_5003196863043163_2582429501128236298_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yur8-CI0nXkAX9pFl7G&_nc_ht=scontent-lga3-2.xx&oh=00_AfCC3kmPut3W_O9Iv59Zg6ns5sp6kyQmiCcmAL0pnM8dlw&oe=6546FAA7" class="d-block w-100" alt="logo design">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    <!--the bootstrap src link to help style the website-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
